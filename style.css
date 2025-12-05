@@ -1,0 +1,256 @@
+/* ========================================================= */
+/* CSS BY Anisa Gonzalez */
+/* ========================================================= */
+
+
+/* ========================== */
+/* IMPORTED FONTS */
+/* ========================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+
+/* ========================== */
+/* CSS RESET */
+/* ========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #ffffff;
+    color: #1E1E1E;
+    line-height: 1.4;
+}
+
+
+/* ========================== */
+/* ROOT VARIABLES */
+/* ========================== */
+:root {
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dark: #1E1E1E;
+    --white: #ffffff;
+
+    --radius: 14px;
+    --spacing: 1.2rem;
+}
+
+
+/* ========================== */
+/* GLOBAL STYLES (mobile first/small) */
+/* ========================== */
+
+body {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1, h2 {
+    font-family: "Kavoon", serif;
+}
+
+h1 {
+    font-size: 3em;
+    color: var(--purple);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--purple);
+    margin: 1.5rem 0 0.7rem 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--teal);
+    margin-bottom: 0.6rem;
+}
+
+h4 {
+    font-size: 1.15em;
+}
+
+p, li, td, th, a {
+    font-size: 1rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+
+/* ========================== */
+/* HEADER */
+/* ========================== */
+
+header p {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+
+/* ========================== */
+/* NAVIGATION */
+/* ========================== */
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+nav a {
+    display: block;
+    background-color: var(--teal);
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    background-color: var(--purple);
+}
+
+
+/* ========================== */
+/* SERVICES SECTION */
+/* ========================== */
+
+#services article {
+    background: var(--white);
+    border: 2px solid var(--lavender);
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+#services figure {
+    width: 80px;
+    margin: 0 auto 0.8rem;
+}
+
+#services p {
+    margin-top: 0.5rem;
+}
+
+
+/* ========================== */
+/* WHY CHOOSE US */
+/* ========================== */
+
+#why ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0;
+    text-align: center;
+}
+
+#why li {
+    background: var(--yellow);
+    padding: 0.8rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    color: var(--dark);
+}
+
+
+/* ========================== */
+/* PRICING */
+/* ========================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.8rem;
+}
+
+thead {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+th, td {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #f4f4f4;
+}
+
+
+/* ========================== */
+/* CALL TO ACTION */
+/* ========================== */
+
+#contact {
+    background-color: var(--pink);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    text-align: center;
+    color: var(--white);
+}
+
+#contact p {
+    margin-bottom: 1rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--pink);
+    padding: 0.8rem 1.2rem;
+    border-radius: var(--radius);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--lavender);
+    color: var(--white);
+}
+
+
+/* ========================== */
+/* FOOTER */
+/* ========================== */
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid #ddd;
+}
+
+footer a {
+    display: block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: var(--purple);
+    font-weight: 600;
+}
